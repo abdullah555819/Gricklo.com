@@ -1,0 +1,415 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.bg-img {
+  background-image: url(./src/img/bg.webp);
+  width: 100%;
+  height: 100vh;
+  background-blend-mode: multiply;
+  filter: saturate(80%) contrast(85%);
+  background-color: rgb(105, 105, 143);
+}
+.search {
+  width: 40%;
+  border-radius: 50px;
+  background-color: transparent;
+  background-image: url(img/white-search-icon.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 10%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-position-y: center;
+  background-size: 24px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-right: 50px;
+  padding-left: 50px;
+  color: white;
+  height: 7vh;
+}
+.search::placeholder {
+  color: white;
+  font-size: 20px;
+  padding-left: 1%;
+}
+.search[type="text"]:focus {
+  outline: none;
+}
+
+.nav-link {
+  font-size: 20px !important;
+  color: white !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.dropdown-menu {
+  background-color: rgba(3, 3, 30, 0.7) !important;
+}
+.dropdown-menu a {
+  text-decoration: none;
+}
+.sign {
+  font-size: 20px;
+  transition: 0.2s ease;
+  color: white;
+  transition: 0.2s ease;
+  margin: 0px 10px;
+}
+.animated-but {
+  background-color: #0dcaf0;
+  border: none;
+  border-radius: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: color 0.5s linear;
+  position: relative;
+}
+.animated-but:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
+.bg-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 5%;
+}
+.bg-para {
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+.form-div1 {
+  width: 57%;
+  margin: auto;
+  height: 15vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 1%;
+}
+.what {
+  position: absolute;
+  top: 55%;
+  z-index: 1;
+  left: 23.2%;
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.inp-what {
+  position: relative;
+  height: 9vh;
+  box-sizing: border-box;
+  padding-left: 10%;
+  border-radius: 7px;
+  border: none;
+  margin-right: 0.5%;
+}
+.inp-what[type="text"]:focus {
+  outline: none;
+}
+.where {
+  position: absolute;
+  top: 55%;
+  z-index: 1;
+  left: 46%;
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.inp-where {
+  position: relative;
+  height: 9vh;
+  box-sizing: border-box;
+  padding-left: 10%;
+  border-radius: 7px;
+  border: none;
+}
+.inp-where[type="text"]:focus {
+  outline: none;
+}
+.but-search {
+  padding: 15px;
+  height: 9vh;
+  border: none;
+  background-color: #0dcaf0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  margin-left: 1%;
+}
+
+.button-div {
+  /* margin-left: 30%; */
+  display: flex;
+  justify-content: center;
+}
+.div-but1 {
+  display: flex;
+  justify-content: space-around;
+}
+.div-but2 {
+  display: flex;
+  justify-content: center;
+  margin-left: 1%;
+}
+.but-1 {
+  padding: 9px 20px;
+  background-color: rgb(252, 246, 246);
+  color: rgb(19, 160, 170);
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.2s ease;
+  margin-right: 1%;
+}
+.but-2 {
+  padding: 9px 20px;
+  background-color: #29a1c5;
+  color: rgb(5, 5, 5);
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 50px;
+  margin-right: 1%;
+}
+.dest-div {
+  display: flex;
+}
+.top-h1 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 3%;
+}
+.desti-img {
+  position: relative;
+}
+.det-h1 {
+  font-size: 24px;
+  font-family: ltao;
+  padding-top: 10%;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.det-h1:hover {
+  color: #0dcaf0;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.circle {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 133px;
+  height: 133px;
+  border: 2px dotted white;
+  border-radius: 50%;
+  background-color: rgba(8, 20, 104, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.image-container:hover .circle {
+  opacity: 1;
+}
+.thing-div {
+  background-color: #f1f6f9;
+}
+.thing-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thing-img1-div {
+  display: block;
+}
+.t-img-1 {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 7px;
+  margin-right: 1%;
+  margin-bottom: 3%;
+}
+.t-img-1 .t-img {
+  object-fit: cover;
+  transition: transform 0.8s;
+  height: 100%;
+  cursor: pointer;
+  background-blend-mode: multiply;
+  filter: brightness(90%) contrast(70%) saturate(80%);
+}
+.t-img-3 {
+  height: 420px;
+  overflow: hidden;
+  border-radius: 7px;
+  margin: 0px 1%;
+}
+.t-img-3 .t-img {
+  object-fit: cover;
+  transition: transform 0.8s;
+  height: 100%;
+  cursor: pointer;
+  background-blend-mode: multiply;
+  filter: brightness(90%) contrast(70%) saturate(80%);
+}
+.t-text {
+  color: white;
+  font-family: ltao;
+  position: absolute;
+  margin-top: -4%;
+  font-size: 20px;
+  margin-left: 2.5%;
+}
+.t-text2 {
+  color: white;
+  font-family: ltao1;
+  position: absolute;
+  margin-top: -16%;
+  width: 18%;
+  margin-left: 2.5%;
+}
+.t-but {
+  background-color: #0dcaf0;
+  color: white;
+  font-family: ltao;
+  border-radius: 50px;
+  padding: 10px 25px;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.work {
+  text-align: center;
+  color: #1a213d;
+  font-family: ltao;
+  padding-top: 6%;
+}
+.res-card-div {
+  border-bottom: 1px solid #dbdde6;
+  box-sizing: border-box;
+}
+.res-img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.res-text-div {
+  padding: 2% 2%;
+  box-shadow: 2px 2px 5px #b9b9b9;
+}
+.res-h2 {
+  font-size: 25px;
+  color: #1a213d;
+  font-family: ltao;
+  padding-top: 3%;
+  text-transform: capitalize;
+}
+.res-p {
+  font-family: ltao1;
+  color: #a4a6ae;
+  font-size: 17px;
+}
+.res-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5%;
+  box-shadow: 2px 5px #dbdde6;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.name {
+  font-family: ltao;
+  color: #1a213d;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3%;
+}
+.call {
+  border-radius: 50%;
+  width: 100%;
+  background-color: rgba(48, 76, 187, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1% 19%;
+  height: 28px;
+  color: #2948c5;
+  margin-right: 7%;
+  transition: 0.2s ease;
+}
+.email {
+  border-radius: 50%;
+  width: 100%;
+  background-color: rgba(48, 76, 187, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1% 19%;
+  height: 28px;
+  color: #2948c5;
+  transition: 0.2s ease;
+  margin-right: 3%;
+}
+.call:hover {
+  background-color: #2948c5;
+  color: white;
+}
+.email:hover {
+  background-color: #2948c5;
+  color: white;
+}
+.explore-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #b9b9b9;
+  width: 50%;
+  margin: auto;
+  padding: 2%;
+}
+.exp-head {
+  font-family: ltao;
+  font-size: 24px;
+  color: #1a213d;
+}
+.e-p2 {
+  font-family: ltao1;
+  font-weight: 700;
+}
+.exp-but {
+  padding: 17px 24px;
+}
